@@ -16,5 +16,20 @@ namespace GLiuAssignment4
         {
             InitializeComponent();
         }
+
+        private void CalculatorButtonTableLayout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
