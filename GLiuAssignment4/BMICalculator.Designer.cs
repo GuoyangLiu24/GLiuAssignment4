@@ -348,7 +348,7 @@
             this.MetricTableLayoutPanel.Controls.Add(this.MetricHeightLabel, 0, 1);
             this.MetricTableLayoutPanel.Controls.Add(this.MetricHeightTextBox, 1, 1);
             this.MetricTableLayoutPanel.Controls.Add(this.MetricWeightTextBox, 1, 0);
-            this.MetricTableLayoutPanel.Location = new System.Drawing.Point(1, 3);
+            this.MetricTableLayoutPanel.Location = new System.Drawing.Point(2, 5);
             this.MetricTableLayoutPanel.Name = "MetricTableLayoutPanel";
             this.MetricTableLayoutPanel.RowCount = 2;
             this.MetricTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33F));
@@ -394,7 +394,6 @@
             this.MetricHeightTextBox.Name = "MetricHeightTextBox";
             this.MetricHeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.MetricHeightTextBox.TabIndex = 8;
-            this.MetricHeightTextBox.Text = "m";
             this.MetricHeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MetricHeightTextBox.TextChanged += new System.EventHandler(this.MetricHeightTextBox_TextChanged_1);
             // 
@@ -406,7 +405,6 @@
             this.MetricWeightTextBox.Name = "MetricWeightTextBox";
             this.MetricWeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.MetricWeightTextBox.TabIndex = 7;
-            this.MetricWeightTextBox.Text = "kg";
             this.MetricWeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MetricWeightTextBox.TextChanged += new System.EventHandler(this.MetricWeightTextBox_TextChanged_1);
             // 
@@ -444,7 +442,7 @@
             this.ImperialTableLayoutPanel.Controls.Add(this.ImperialHeightLabel, 0, 1);
             this.ImperialTableLayoutPanel.Controls.Add(this.ImperialHeightTextBox, 1, 1);
             this.ImperialTableLayoutPanel.Controls.Add(this.ImperialWeightTextBox, 1, 0);
-            this.ImperialTableLayoutPanel.Location = new System.Drawing.Point(2, 5);
+            this.ImperialTableLayoutPanel.Location = new System.Drawing.Point(2, 7);
             this.ImperialTableLayoutPanel.Name = "ImperialTableLayoutPanel";
             this.ImperialTableLayoutPanel.RowCount = 2;
             this.ImperialTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33F));
@@ -489,7 +487,6 @@
             this.ImperialHeightTextBox.Name = "ImperialHeightTextBox";
             this.ImperialHeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.ImperialHeightTextBox.TabIndex = 8;
-            this.ImperialHeightTextBox.Text = "inch";
             this.ImperialHeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ImperialHeightTextBox.TextChanged += new System.EventHandler(this.ImperialHeightTextBox_TextChanged_1);
             // 
@@ -501,7 +498,6 @@
             this.ImperialWeightTextBox.Name = "ImperialWeightTextBox";
             this.ImperialWeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.ImperialWeightTextBox.TabIndex = 7;
-            this.ImperialWeightTextBox.Text = "pound";
             this.ImperialWeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ImperialWeightTextBox.TextChanged += new System.EventHandler(this.ImperialWeightTextBox_TextChanged_1);
             // 

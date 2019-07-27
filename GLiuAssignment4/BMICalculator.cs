@@ -123,13 +123,13 @@ namespace GLiuAssignment4
             {
                 MyHeight = float.Parse(ImperialHeightTextBox.Text);
                 MyWeight = float.Parse(ImperialWeightTextBox.Text);
-                MyBMI = (MyWeight * 703) / (MyHeight * MyWeight);
+                MyBMI = (MyWeight * 703) / (MyHeight * MyHeight);
             }
             else
             {
                 MyHeight = float.Parse(MetricHeightTextBox.Text);
                 MyWeight = float.Parse(MetricWeightTextBox.Text);
-                MyBMI = MyWeight / (MyHeight * MyWeight);
+                MyBMI = MyWeight / (MyHeight * MyHeight);
             }
             MyBMI = (float)Math.Round(MyBMI, 2);
             ResultTextBox.Text = MyBMI.ToString();
@@ -138,10 +138,10 @@ namespace GLiuAssignment4
 
         private void ClearForm()
         {
-            ImperialHeightTextBox.Text = "";
-            ImperialWeightTextBox.Text = "";
-            ImperialHeightTextBox.Text = "";
-            ImperialWeightTextBox.Text = "";
+            ImperialHeightTextBox.Text = "inch";
+            ImperialWeightTextBox.Text = "pound";
+            MetricHeightTextBox.Text = "metre";
+            MetricWeightTextBox.Text = "kilogram";
             BMIButton.Enabled = false;
             ResultTextBox.Clear();
             ResultTextBox.BackColor = Color.White;
