@@ -7,16 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+ Author's name:Guoyang Liu
+ Author’s student number: 300966032
+ Date last Modified: Jul 26, 2019
+ Program description: create a BMI calculator app that allows users to enter their 
+ weight and height and whether they are entering these values in Imperial or Metric 
+ units, then calculates and displays the user's body mass index (BMI).
+ Revision History: Add form, design form, code solution, compress all file.
+     */
 
 namespace GLiuAssignment4
+    
 {
-    public partial class BMICalculatorForm : Form
+    public partial class BMICalculator : Form
     {
         public float MyHeight { get; set; }
         public float MyWeight { get; set; }
         public float MyBMI { get; set; }
 
-        public BMICalculatorForm()
+        public BMICalculator()
         {
             InitializeComponent();
         }
@@ -33,7 +43,7 @@ namespace GLiuAssignment4
         {
             ClearForm();
             ImperialTableLayoutPanel.Visible = true;
-            ImperialTableLayoutPanel.Visible = false;
+            MetricTableLayoutPanel.Visible = false;
         }
 
         private void MetricButton_CheckedChanged_1(object sender, EventArgs e)
@@ -81,7 +91,7 @@ namespace GLiuAssignment4
         {
             try
             {
-                float.Parse(ImperialWeightTextBox.Text);
+                float.Parse(MetricWeightTextBox.Text);
                 BMIButton.Enabled = true;
             }
             catch
@@ -94,7 +104,7 @@ namespace GLiuAssignment4
         {
             try
             {
-                float.Parse(ImperialHeightTextBox.Text);
+                float.Parse(MetricHeightTextBox.Text);
                 BMIButton.Enabled = true;
             }
             catch
@@ -117,8 +127,8 @@ namespace GLiuAssignment4
             }
             else
             {
-                MyHeight = float.Parse(ImperialHeightTextBox.Text);
-                MyWeight = float.Parse(ImperialWeightTextBox.Text);
+                MyHeight = float.Parse(MetricHeightTextBox.Text);
+                MyWeight = float.Parse(MetricWeightTextBox.Text);
                 MyBMI = MyWeight / (MyHeight * MyWeight);
             }
             MyBMI = (float)Math.Round(MyBMI, 2);
@@ -128,10 +138,10 @@ namespace GLiuAssignment4
 
         private void ClearForm()
         {
-            ImperialHeightTextBox.Text = "inches";
-            ImperialWeightTextBox.Text = "pounds";
-            ImperialHeightTextBox.Text = "meters";
-            ImperialWeightTextBox.Text = "kilograms";
+            ImperialHeightTextBox.Text = "";
+            ImperialWeightTextBox.Text = "";
+            ImperialHeightTextBox.Text = "";
+            ImperialWeightTextBox.Text = "";
             BMIButton.Enabled = false;
             ResultTextBox.Clear();
             ResultTextBox.BackColor = Color.White;
@@ -154,7 +164,7 @@ namespace GLiuAssignment4
 
         private void button20_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)

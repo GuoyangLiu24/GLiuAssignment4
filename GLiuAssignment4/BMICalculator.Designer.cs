@@ -1,6 +1,6 @@
 ﻿namespace GLiuAssignment4
 {
-    partial class BMICalculatorForm
+    partial class BMICalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -394,7 +394,7 @@
             this.MetricHeightTextBox.Name = "MetricHeightTextBox";
             this.MetricHeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.MetricHeightTextBox.TabIndex = 8;
-            this.MetricHeightTextBox.Text = "inch";
+            this.MetricHeightTextBox.Text = "m";
             this.MetricHeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MetricHeightTextBox.TextChanged += new System.EventHandler(this.MetricHeightTextBox_TextChanged_1);
             // 
@@ -406,7 +406,7 @@
             this.MetricWeightTextBox.Name = "MetricWeightTextBox";
             this.MetricWeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.MetricWeightTextBox.TabIndex = 7;
-            this.MetricWeightTextBox.Text = "pound";
+            this.MetricWeightTextBox.Text = "kg";
             this.MetricWeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MetricWeightTextBox.TextChanged += new System.EventHandler(this.MetricWeightTextBox_TextChanged_1);
             // 
@@ -444,7 +444,7 @@
             this.ImperialTableLayoutPanel.Controls.Add(this.ImperialHeightLabel, 0, 1);
             this.ImperialTableLayoutPanel.Controls.Add(this.ImperialHeightTextBox, 1, 1);
             this.ImperialTableLayoutPanel.Controls.Add(this.ImperialWeightTextBox, 1, 0);
-            this.ImperialTableLayoutPanel.Location = new System.Drawing.Point(2, 3);
+            this.ImperialTableLayoutPanel.Location = new System.Drawing.Point(2, 5);
             this.ImperialTableLayoutPanel.Name = "ImperialTableLayoutPanel";
             this.ImperialTableLayoutPanel.RowCount = 2;
             this.ImperialTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33F));
@@ -489,7 +489,7 @@
             this.ImperialHeightTextBox.Name = "ImperialHeightTextBox";
             this.ImperialHeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.ImperialHeightTextBox.TabIndex = 8;
-            this.ImperialHeightTextBox.Text = "m";
+            this.ImperialHeightTextBox.Text = "inch";
             this.ImperialHeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ImperialHeightTextBox.TextChanged += new System.EventHandler(this.ImperialHeightTextBox_TextChanged_1);
             // 
@@ -501,11 +501,11 @@
             this.ImperialWeightTextBox.Name = "ImperialWeightTextBox";
             this.ImperialWeightTextBox.Size = new System.Drawing.Size(234, 38);
             this.ImperialWeightTextBox.TabIndex = 7;
-            this.ImperialWeightTextBox.Text = "kg";
+            this.ImperialWeightTextBox.Text = "pound";
             this.ImperialWeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ImperialWeightTextBox.TextChanged += new System.EventHandler(this.ImperialWeightTextBox_TextChanged_1);
             // 
-            // BMICalculatorForm
+            // BMICalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -519,7 +519,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
-            this.Name = "BMICalculatorForm";
+            this.Name = "BMICalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMICalculatorForm";
             this.Load += new System.EventHandler(this.BMICalculatorForm_Load);
